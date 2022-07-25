@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisztráció</title>
+</head>
+
+<body>
+    <h1>Regisztráció a versenyre!</h1>
+
+    <form action="">
+        <div>
+            <div>
+                <label for="fistname">Vezetéknév</label>
+                <input type="text" id="fistname" name="lastname" required>
+                <label for="lastname">Keresztnév</label>
+                <input type="text" id="lastname" name="lastname" required>
+            </div>
+
+            <div>
+                <input type="radio" name="race" id="funrun" value="funrun">
+                <label for="funrun">Fun Run 5k</label><br>
+                <input type="radio" name="race" id="half" value="half">
+                <label for="half">Half Marathon</label><br>
+                <input type="radio" name="race" id="full" value="full">
+                <label for="full">Full Marathon</label>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="A jelszónak tartalmaznia kell legalább egy számot és egy nagybetűt és egy kisbetűt, és legalább 8 vagy több karaktert!">
+            </div>
+            <div>
+                <label for="division">Válassza ki a korcsoportot!</label>
+                <select name="division" id="division">
+                    <option value="kid">18 év alatt</option>
+                    <option value="yadult">18-30 év</option>
+                    <option value="adult">31-50 év</option>
+                    <option value="senior">50 év felett</option>
+                </select>
+            </div>
+        </div>
+        <button>Register</button>
+    </form>
+
+</body>
+
+</html>
