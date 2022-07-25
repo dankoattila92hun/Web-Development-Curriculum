@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Űrlapok</h1>
+
+    <form action="https://www.google.hu/search">
+        <div>
+            <p>
+                <input type="text" name="q" id="search">
+                <button>Search Google</button>
+            </p>
+
+            <p>
+                <label for="username">Enter Username</label>
+                <input id="username" type="text" placeholder="username" name="username">
+            </p>
+
+            <p>
+                <label for="password">Enter Username</label>
+                <input id="password" type="password" placeholder="password" name="password">
+            </p>
+
+            <p>
+                <label for="color">Enter Color</label>
+                <input id="color" type="color" name="color">
+            </p>
+
+            <p>
+                <label for="number">Enter Number</label>
+                <input id="number" type="number" placeholder="enter a number" name="number" min="1" max="10">
+            </p>
+
+            <button type="Submit">Submit</button>
+            
+            <h3>More input buttons</h3>
+
+            <form action="/birds">
+
+                <p>
+                    <label for="s">S</label>
+                    <input type="radio" name="size" id="s" value="S">
+                    <label for="m">M</label>
+                    <input type="radio" name="size" id="m" value="M">
+                    <label for="l">L</label>
+                    <input type="radio" name="size" id="l" value="L">
+                </p>
+
+                <p><input type="checkbox" name="adatvédelem_tos" id="adatvédelem">
+                <label for="adatvédelem">Adatvédelmi szöveg</label>
+                </p>
+
+                <p><input type="checkbox" name="marketing_tos" id="marketing">
+                <label for="marketing">Marketing szöveg</label>
+                </p>
+
+                <p>
+                    <label for="meal">Válassza ki a rendelt ételt!</label>
+                    <select name="meal" id="meal">
+                        <option value="Hal">Hal</option>
+                        <option value="Vega">Vega</option>
+                        <option value="Pizza">Pizza</option>
+                        <option value="Steak">Steak</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="cheese">Sajt száma</label>
+                    <input type="range" id="cheese" min="1" max="10" step="1" name="cheese_level">
+                </p>
+
+                <p>
+                    <label for="egyéb">Egyéb óhaj-sóhaj?</label><br>
+                    <textarea name="egyéb" id="egyéb" cols="30" rows="10"></textarea>
+                </p>
+
+                <p><button>Submit</button></p>
+            </form>
+
+        </div>
+    </form>
+
+</body>
+
+</html>
