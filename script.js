@@ -31,4 +31,15 @@ if (age <= 5) {
 else {
     console.log("You are a senior, you pay 10 HUF")
 }
-    
+
+
+const airplaneSeats = [
+    ['Ruth', 'Anthony', 'Stevie'],
+    ['Amelia', 'Pedro', 'Maya'],
+    ['Xavier', 'Ananya', 'Luis'],
+    ['Luke', null, 'Deniz'],
+    ['Rin', 'Sakura', 'Francisco']
+];
+
+airplaneSeats.splice(3,1,'Hugo');
+console.log(airplaneSeats);
